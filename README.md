@@ -6,7 +6,7 @@ HNCrawl
 **Introduction**
 
 HNCrawl is a tiny, simple [`scrapy`][scrapy]-based crawler which grabs the html 
-content of pages linked toon the front page of hacker news.
+content of pages linked to the front page of hacker news.
 
 ## Examples
 
@@ -17,7 +17,7 @@ content of pages linked toon the front page of hacker news.
     
 ### Scraping
 
-**Note**: Please be sure to keep in mind that [`Crawl-Delay`][crawl] setting in the HN [robots.txt][robots] file is set to **30 seconds**.  **Please be sure to avoid using the scraper more than once per 30 seconds!**
+**Note**: Please be sure to keep in mind that the [`Crawl-Delay`][crawl] value set in the HN [`robots.txt`][robots] file is set to **30 seconds**.  **Please be sure to avoid using the scraper more than once per 30 seconds!**
     
 **Scrape the links from the front page of HN**    
     
@@ -55,7 +55,7 @@ The JSON summary of news items look like this:
 ## Dependencies
 
 - [scrapy][scrapy]
-- [Beautiful Soup][http://www.crummy.com/software/BeautifulSoup/]
+- [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/)
 
 ## License
 
