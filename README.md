@@ -17,7 +17,7 @@ content of pages linked toon the front page of hacker news.
     
 ### Scraping
 
-:warning: **Note**: Please be sure to keep in mind that `Crawl-Delay` setting in the HN [robots.txt][robots] file is set to **30 seconds**.  **Please be sure to avoid using the scraper more than once per 30 seconds!**
+**Note**: Please be sure to keep in mind that [`Crawl-Delay`][crawl] setting in the HN [robots.txt][robots] file is set to **30 seconds**.  **Please be sure to avoid using the scraper more than once per 30 seconds!**
     
 **Scrape the links from the front page of HN**    
     
@@ -61,5 +61,7 @@ The JSON summary of news items look like this:
 
 HNCrawl is MIT licensed.
 
+[crawl]: http://en.wikipedia.org/wiki/Robots_exclusion_standard#Crawl-delay_directive
 [hn]: http://news.ycombinator.com
+[robots]: http://news.ycombinator.com/robots.txt
 [scrapy]: http://scrapy.org/
