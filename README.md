@@ -35,15 +35,15 @@ of the SHA1 hash of the hacker news item url.
 
      ├── out
      │   ├── 000f86c7547b47a700dee0879a0fe08b4597360f
-     │   │   └── html
+     │   │   └── index.html
      │   ├── 0190cbad182ab3bc9a92482d169f38e363ca3c57
-     │   │   └── html
+     │   │   └── index.html
      │   ├── 02bae9642c8dd4b75a593c1c42beff62824ee8fc
-     │   │   └── html
+     │   │   └── index.html
      │   ├── 05c1460571f0ac45f77bf2ecbd3cba8b85c20621
-     │   │   └── html
+     │   │   └── index.html
      │   ├── 0b1587a3dbe9996d10a0fd3250f75462ebd59a0b
-     │   │   └── html
+     │   │   └── index.html
      │   ├── 0c5c67585004e03341e6a87d2db5257b93337b86
      │   │   └── 
 
