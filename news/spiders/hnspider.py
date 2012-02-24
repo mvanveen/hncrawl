@@ -40,5 +40,5 @@ class HnspiderSpider(BaseSpider):
       folder = PATH + '/' + sha1_response
       if not os.path.exists(folder):
         os.makedirs(folder)
-      with open(folder + '/html', 'w+') as file_obj:
+      with open(folder + '/index.html', 'w+') as file_obj:
         file_obj.write(response.body)
