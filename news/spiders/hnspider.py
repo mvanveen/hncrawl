@@ -7,7 +7,7 @@ from scrapy.http import Request
 from scrapy.spider import BaseSpider
 from news.items import NewsItem
 
-PATH = '/Users/mvanveen/root/dev/news/out/'
+PATH = os.path.abspath(os.path.join(__file__, '../../../out/'))
 
 class HnspiderSpider(BaseSpider):
   name = 'hnspider'
@@ -37,7 +37,8 @@ class HnspiderSpider(BaseSpider):
 
     else:
       sha1_response = hashlib.sha1(response.url).hexdigest()
-      if not os.path.exists(PATH + sha1_response):
-        os.makedirs(PATH + sha1_response)
-      with open(PATH + sha1_response + '/html', 'w+') as file_obj:
+      folder = PATH + '/' + sha1_response
+      if not os.path.exists(folder):
+        os.makedirs(folder)
+      with open(folder + '/html', 'w+') as file_obj:
         file_obj.write(response.body)
