@@ -17,7 +17,7 @@ content of pages linked to the front page of hacker news.
     
 ### Scraping
 
-**Note**: Please be sure to keep in mind that [`Crawl-Delay`][crawl] setting in the HN [`robots.txt`][robots] file is set to **30 seconds**.  **Please be sure to avoid using the scraper more than once per 30 seconds!**
+**Note**: Please be sure to keep in mind that the [`Crawl-Delay`][crawl] value set in the HN [`robots.txt`][robots] file is set to **30 seconds**.  **Please be sure to avoid using the scraper more than once per 30 seconds!**
     
 **Scrape the links from the front page of HN**    
     
