@@ -19,7 +19,7 @@ content of pages linked toon the front page of hacker news.
 
     $ scrapy crawl hnspider
 
-** Scrape items and return json summary of items scraped into `items.json` **
+**Scrape items and return json summary of items scraped into `items.json`**
 
     $ scrapy crawl alias_scrape -o items.json -t json
     
