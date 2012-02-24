@@ -48,6 +48,14 @@ The JSON summary of news items look like this:
 	{'title': u'EFF Wins Protection for Time Zone Database',
 	 'url': u'https://www.eff.org/press/releases/eff-wins-protection-time-zone-database'}
 
+## Dependencies
+
+- [scrapy][scrapy]
+- [Beautiful Soup][http://www.crummy.com/software/BeautifulSoup/]
+
+## License
+
+HNCrawl is MIT licensed.
 
 [hn]: http://news.ycombinator.com
 [scrapy]: http://scrapy.org/
