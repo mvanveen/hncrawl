@@ -6,7 +6,7 @@ HNCrawl
 **Introduction**
 
 HNCrawl is a tiny, simple [`scrapy`][scrapy]-based crawler which grabs the html 
-content of pages linked toon the front page of hacker news.
+content of pages linked to the front page of hacker news.
 
 ## Examples
 
