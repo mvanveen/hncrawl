@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Hncrawl by mvanveen</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Hncrawl</h1>
+        <p class="header">A scrapy-based Hacker News crawler.</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/mvanveen/hncrawl/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/mvanveen/hncrawl/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/mvanveen/hncrawl">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/mvanveen">mvanveen</a></p>
+
+
+      </header>
+      <section>
+        <h1>HNCrawl</h1>
+
+<p><em>A <a href="http://scrapy.org/"><code>scrapy</code></a>-based <a href="http://news.ycombinator.com">Hacker News</a> crawler.</em></p>
+
+<p><strong>Introduction</strong></p>
+
+<p>HNCrawl is a tiny, simple <a href="http://scrapy.org/"><code>scrapy</code></a>-based crawler which grabs the html 
+content of pages linked to the front page of hacker news.</p>
+
+<h2>Examples</h2>
+
+<h3>Installation</h3>
+
+<pre><code>$ pip install scrapy
+$ git clone git@github.com:mvanveen/hncrawl.git
+</code></pre>
+
+<h3>Scraping</h3>
+
+<p><strong>Note</strong>: Please be sure to keep in mind that the <a href="http://en.wikipedia.org/wiki/Robots_exclusion_standard#Crawl-delay_directive"><code>Crawl-Delay</code></a> value set in the HN <a href="http://news.ycombinator.com/robots.txt"><code>robots.txt</code></a> file is set to <strong>30 seconds</strong>.  <strong>Please be sure to avoid using the scraper more than once per 30 seconds!</strong></p>
+
+<p><strong>Scrape the links from the front page of HN</strong>    </p>
+
+<pre><code>$ scrapy crawl hnspider
+</code></pre>
+
+<p><strong>Scrape items and return json summary of items scraped into <code>items.json</code></strong></p>
+
+<pre><code>$ scrapy crawl alias_scrape -o items.json -t json
+</code></pre>
+
+<h2>Output</h2>
+
+<p>Here is an example file hierarchy.  Folders are a hex digest
+of the SHA1 hash of the hacker news item url.</p>
+
+<pre><code> ├── out
+ │   ├── 000f86c7547b47a700dee0879a0fe08b4597360f
+ │   │   └── index.html
+ │   ├── 0190cbad182ab3bc9a92482d169f38e363ca3c57
+ │   │   └── index.html
+ │   ├── 02bae9642c8dd4b75a593c1c42beff62824ee8fc
+ │   │   └── index.html
+ │   ├── 05c1460571f0ac45f77bf2ecbd3cba8b85c20621
+ │   │   └── index.html
+ │   ├── 0b1587a3dbe9996d10a0fd3250f75462ebd59a0b
+ │   │   └── index.html
+ │   ├── 0c5c67585004e03341e6a87d2db5257b93337b86
+ │   │   └── 
+</code></pre>
+
+<p>The JSON summary of news items look like this:</p>
+
+<pre><code>{'title': u'EFF Wins Protection for Time Zone Database',
+ 'url': u'https://www.eff.org/press/releases/eff-wins-protection-time-zone-database'}
+</code></pre>
+
+<h2>Dependencies</h2>
+
+<ul>
+<li><a href="http://scrapy.org/">scrapy</a></li>
+<li><a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a></li>
+</ul><h2>License</h2>
+
+<p>HNCrawl is MIT licensed.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
